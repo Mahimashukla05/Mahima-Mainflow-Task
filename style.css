@@ -240,28 +240,65 @@ footer a {
 } */
 /* Responsive Enhancements */
 @media (max-width: 768px) {
-  /* Header Layout */
+  /* Header */
   header {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-links {
     flex-direction: column;
+    align-items: center;
+    gap: 12px;
     width: 100%;
-    gap: 10px;
-    margin-top: 10px;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
   }
 
   .auth-buttons {
-    margin-left: 0;
-    margin-top: 10px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     gap: 10px;
   }
+
+  .auth-buttons a {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Ensure dropdowns display properly on mobile */
+  .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
 
   /* Hero Section */
   .hero-content {
@@ -314,4 +351,3 @@ footer a {
 }
 
 /* Meta Viewport Tag (Place inside <head> in HTML) */
-
